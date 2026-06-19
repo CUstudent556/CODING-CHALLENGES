@@ -1,14 +1,14 @@
 {
-  "name": "react-vite-tailwind",
+  "name": "coding-challenges",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "start": "vite",
+    "start": "node server.js",
     "build": "vite build",
     "preview": "vite preview",
-    "server": "node server.js"
+    "vercel-build": "npm run build"
   },
   "dependencies": {
     "axios": "^1.18.0",
@@ -36,5 +36,8 @@
     "typescript": "5.9.3",
     "vite": "7.3.2",
     "vite-plugin-singlefile": "2.3.0"
+  },
+  "engines": {
+    "node": "18.x || 20.x"
   }
 }
